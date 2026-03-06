@@ -1,0 +1,73 @@
+---
+title: OSMD Component Testing
+---
+
+import SheetDisplay from "@site/src/components/SheetDisplay";
+import SheetMusicGallery from "@site/src/components/SheetMusicGallery";
+
+# OSMD Component Testing
+
+This page demonstrates the OpenSheetMusicDisplay components available in the music wiki.
+
+## Basic Sheet Display
+
+Simple sheet music display with loading and error handling:
+
+<SheetDisplay mxl="/music/Cmaj.mxl" width={500} />
+
+## Sheet Music Gallery
+
+When you have multiple sheets to display (you'll need to add more MXL files to test this):
+
+<SheetMusicGallery
+  sheets={[
+    {
+      name: "C Major Chord",
+      path: "/mxl/chords/Cmaj.mxl",
+      description: "Basic C major triad",
+    },
+    { name: "Cmin", path: "/mxl/chords/Cmin.mxl" },
+  ]}
+  showSelector={true}
+/>
+
+## Usage Examples
+
+### Basic Usage
+
+```jsx
+import SheetDisplay from "@site/src/components/SheetDisplay";
+
+<SheetDisplay mxl="/music/Cmaj.mxl" />;
+```
+
+### With Custom Size
+
+```jsx
+<SheetDisplay mxl="/music/Cmaj.mxl" width={600} height={400} />
+```
+
+### Interactive Controls
+
+```jsx
+import InteractiveSheet from "@site/src/components/InteractiveSheet";
+
+<InteractiveSheet
+  mxl="/music/Cmaj.mxl"
+  showControls={true}
+  showPlayback={false}
+/>;
+```
+
+### Multiple Sheets
+
+```jsx
+import SheetMusicGallery from "@site/src/components/SheetMusicGallery";
+
+<SheetMusicGallery
+  sheets={[
+    { name: "Sheet 1", path: "/music/sheet1.mxl" },
+    { name: "Sheet 2", path: "/music/sheet2.mxl" },
+  ]}
+/>;
+```

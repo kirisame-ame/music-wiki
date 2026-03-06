@@ -28,3 +28,100 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* OSMD Component Styles */
+.sheet-music-gallery {
+  margin: 1rem 0;
+}
+
+.sheet-music-gallery select {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-family: inherit;
+}
+
+.sheet-music-gallery select:focus {
+  border-color: var(--ifm-color-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(46, 133, 85, 0.2);
+}
+
+/* Interactive Sheet Controls */
+.interactive-sheet-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.interactive-sheet-controls button {
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--ifm-font-color-base);
+  font-size: 0.9rem;
+}
+
+.interactive-sheet-controls button:hover:not(:disabled) {
+  background: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-primary);
+}
+
+.interactive-sheet-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* OSMD Error Styles */
+.osmd-error {
+  padding: 1rem;
+  border: 1px solid #ff6b6b;
+  border-radius: 4px;
+  background: #fff5f5;
+  color: #c92a2a;
+  margin: 1rem 0;
+}
+
+[data-theme="dark"] .osmd-error {
+  background: #2d1b1b;
+  border-color: #ff8787;
+  color: #ff8787;
+}
+
+/* OSMD Loading Styles */
+.osmd-loading {
+  padding: 2rem;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+/* Sheet Music Container */
+.osmd-container {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  overflow: auto;
+  background: white;
+  margin: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .interactive-sheet-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .interactive-sheet-controls > div {
+    justify-content: center;
+  }
+}
