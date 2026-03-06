@@ -28,7 +28,9 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-
+abbr {
+  color: var(--ifm-color-primary-light);
+}
 /* OSMD Component Styles */
 .sheet-music-gallery {
   margin: 1rem 0;

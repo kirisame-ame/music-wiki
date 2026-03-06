@@ -1,5 +1,6 @@
 ---
 id: intro
+sidebar_position: 1
 ---
 
 import SheetDisplay from "@site/src/components/SheetDisplay";
@@ -9,13 +10,28 @@ import MidiPlayer from "@site/src/components/MidiPlayer";
 
 Fundamentally, a chord is the sound of two or more notes being played at the same time.
 
+They are notated based on their root, which is the fundamental note of the chord.
+It is usually the lowest note of the chord but that is not always the case
+
+After the root, its name depends on the other notes of the chord and this tells us the "flavor"
+of the chord
+
 ## C Basic Chords
 
 <SheetDisplay mxl="/mxl/chords/Cchords.mxl" showMetadata={false} />
-<MidiPlayer midiFile="/midi/chords/Cchords.mid" />
+<MidiPlayer src="/midi/chords/Cchords.mid" />
 ## C Basic Arpeggios
 
 When played one note at a time, it is called an Arpeggio or Broken Chord
 
 <SheetDisplay mxl="/mxl/chords/Carp.mxl" showMetadata={false} />
-<MidiPlayer midiFile="/midi/chords/Carp.mid" />
+<MidiPlayer src="/midi/chords/Carp.mid" />
+
+## Inversions
+
+A chord can be inverted which means to have its note order re-arranged.
+It is useful for voice leading, making transitions smooth or simply because you want that particular sound.
+It can be notated as (Original name)/(Lowest note).
+
+<SheetDisplay mxl="/mxl/chords/inversion.mxl" showMetadata={false} />
+<MidiPlayer src="/midi/chords/inversion.mid" />
