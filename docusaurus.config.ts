@@ -104,11 +104,11 @@ const config: Config = {
           items: [
             {
               label: "Intro",
-              to: "/docs/intro",
+              to: "/docs/theory/intro",
             },
             {
               label: "Chords",
-              to: "/docs/chords/intro",
+              to: "/docs/theory/chords/intro",
             },
           ],
         },
