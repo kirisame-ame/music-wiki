@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { ReactElement, useEffect, useRef, useState } from "react";
 
 interface MidiPlayerProps {
-    midiFile: string | null; // Accept only string URL
+    src: string;
 }
 
 // Global script loading state
@@ -39,7 +39,8 @@ const loadMidiPlayerScript = (): Promise<void> => {
     return scriptLoadPromise;
 };
 
-const MidiPlayer: React.FC<MidiPlayerProps> = ({ midiFile }) => {
+function MidiPlayer({ src }: MidiPlayerProps): ReactElement {
+    const midiFile = src;
     const containerRef = useRef<HTMLDivElement | null>(null);
     const [scriptLoaded, setScriptLoaded] = useState(false);
     const midiPlayerRef = useRef<any | null>(null);
@@ -136,6 +137,6 @@ const MidiPlayer: React.FC<MidiPlayerProps> = ({ midiFile }) => {
             </div>
         </>
     );
-};
+}
 
 export default MidiPlayer;

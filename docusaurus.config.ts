@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Kirisame's Unofficial Music Wiki",
   tagline: "Scales, Chords, etc",
-  favicon: "img/teto.ico",
+  favicon: "img/image_logo.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://wiki.kirisame.jp.net/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "kirisame-ame", // Usually your GitHub org/user name.
+  projectName: "music-wiki", // Usually your repo name.
 
   onBrokenLinks: "warn",
 
@@ -42,9 +42,6 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
@@ -53,9 +50,7 @@ const config: Config = {
             xslt: true,
           },
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -75,7 +70,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "My Site",
+      title: "Home",
       logo: {
         alt: "My Site Logo",
         src: "img/image_logo.png",
@@ -85,12 +80,12 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Music Theory",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
+          href: "https://lit.link/kirisameame",
+          label: "VocaP Profile",
           position: "right",
         },
       ],
@@ -99,28 +94,32 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Subjects",
           items: [
             {
               label: "Intro",
               to: "/docs/intro",
             },
+            {
+              label: "Chords",
+              to: "/docs/chords/intro",
+            },
           ],
         },
         {
-          title: "Community",
+          title: "My Socials",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Youtube",
+              href: "https://www.youtube.com/@Kirisame.amefuri",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "X (twitter)",
+              href: "https://x.com/Kirisameamefuri",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "Instagram",
+              href: "https://instagram.com/kirisame_ame",
             },
           ],
         },
@@ -128,17 +127,17 @@ const config: Config = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "Spotify",
+              href: "https://open.spotify.com/artist/1dJ95RetZNmck5ab3IdWOL?si=ar5VJ8OtTqa2MHYyz08WPw",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "Apple Music",
+              href: "https://music.apple.com/id/artist/kirisame/1756134648",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Kirisame-ame. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

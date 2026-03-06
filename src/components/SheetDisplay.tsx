@@ -12,7 +12,7 @@ export default function SheetDisplay({
     mxl,
     width,
     height,
-    showMetadata = true,
+    showMetadata = false,
 }: SheetDisplayProps) {
     const divRef = useRef<HTMLDivElement>(null);
     const osmdRef = useRef<OpenSheetMusicDisplay | null>(null);
