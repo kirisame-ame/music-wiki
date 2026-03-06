@@ -38,7 +38,6 @@ export default function SheetDisplay({
                     drawComposer: showMetadata,
                     drawCredits: showMetadata,
                 });
-
                 // Load the MXL file
                 await osmdRef.current.load(mxl);
 

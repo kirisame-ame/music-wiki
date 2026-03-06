@@ -124,7 +124,7 @@ const config: Config = {
           ],
         },
         {
-          title: "More",
+          title: "Stream my music!",
           items: [
             {
               label: "Spotify",
