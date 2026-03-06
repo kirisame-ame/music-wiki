@@ -82,6 +82,12 @@ const config: Config = {
           position: "left",
           label: "Music Theory",
         },
+        {
+          type: "docSidebar",
+          sidebarId: "analysisSidebar",
+          position: "left",
+          label: "Self-Analysis",
+        },
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://lit.link/kirisameame",
